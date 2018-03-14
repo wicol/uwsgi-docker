@@ -3,4 +3,4 @@ VOLUME /srv/app
 WORKDIR /srv/app
 RUN apk add --no-cache uwsgi
 COPY entrypoint.sh /srv
-CMD /srv/entrypoint.sh
+CMD ["/srv/entrypoint.sh"]
